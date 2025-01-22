@@ -18,6 +18,7 @@ const Checkbox = ({
 }: CheckboxProps) => {
   return (
     <label className="checkbox_legenda" htmlFor={id}>
+      
       <input 
       type="checkbox" 
       className="checkbox" 
@@ -27,8 +28,8 @@ const Checkbox = ({
       onChange={aoSelecionar}
       {...rest}
       />
-      <span>{legenda}</span>
-    </label>
+<span>{legenda}</span>
+</label>
   )
 }
 
