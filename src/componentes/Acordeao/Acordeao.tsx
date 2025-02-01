@@ -6,7 +6,7 @@ interface AcordeaoProps {
 
 const Acordeao = ({ children }: AcordeaoProps) => {
   return (
-    <div className="acordeao__container">`{ children }</div>
+    <div className="acordeao__container">{ children }</div>
   )
 }
 
