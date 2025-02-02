@@ -1,10 +1,14 @@
+import "./Modal.css";
+import ModalCabecalho from "./ModalCabecalho";
+import ModalConteudo from "./ModalConteudo";
+
 interface ModalProps extends React.HTMLProps<HTMLDialogElement> {
     estaAberta: boolean;
     ariaLabel: string;
     fecharModal: () => void;
 }
 
-const Modal = ({ children, fecharModal, estaAberta, ariaLabel, ...rest }: ModalProps) => {
+const Modal = ({fecharModal, estaAberta, ariaLabel, ...rest }: ModalProps) => {
     return (
         <>
             <div className="modal__overlay" onClick={fecharModal} />
@@ -15,7 +19,8 @@ const Modal = ({ children, fecharModal, estaAberta, ariaLabel, ...rest }: ModalP
                 onClose={fecharModal}
                 {...rest}
             >
-                {children}
+                <ModalCabecalho aoFechar={fecharModal} />
+                <ModalConteudo aoFechar={fecharModal}/>
             </dialog>
         </>
     )
