@@ -7,7 +7,6 @@ type ProdutoTituloProps = {
 const ProdutoTitulo = ({ titulo }: ProdutoTituloProps) => {
   return (
     <Tipografia
-      tabIndex={0}
       elemento="h3"
       variante="corpo"
       cor="azul"

@@ -3,7 +3,7 @@ import { CategoriasProps } from "./Categorias";
 
 const ListaCategorias = ({ categorias }: CategoriasProps) => {
   return (
-    <ul tabIndex={0} className="secao__categoria">
+    <ul  className="secao__categoria">
       {categorias.map((categoria) => (
         <CategoriaItem
           key={categoria.id}

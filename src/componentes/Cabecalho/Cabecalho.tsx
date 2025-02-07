@@ -13,7 +13,7 @@ const Cabecalho = () => {
       <form>
         <Pesquisa />
       </form>
-      <ul tabIndex={0} className="cabecalho__icones">
+      <ul className="cabecalho__icones">
         <li>
           <Botao
             aria-label="Carrinho de supermercado"
